@@ -6,9 +6,9 @@ if (isset($_POST['patient'])  && isset($_POST['dateHour']) && !empty($_POST['dat
 	//on se connecte au serveur
 	
     $mysqlConnection = new PDO(
-        'mysql:host=localhost;dbname=hospitale2n;charset=utf8', // serveur;base de donnée; encodage de caractère
+        'mysql:host=141.94.22.233;dbname=mlpdwwb_hospitale2n;charset=utf8', // serveur;base de donnée; encodage de caractère
         'root', // mon compte à moi pour me connecter au serveur
-        '' // mon mot de passe pour me connecter au serveur
+        'mlpdwwb' // mon mot de passe pour me connecter au serveur
     );
     $mysqlConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // rapport d'erreur et emet une exception
 
